@@ -17,5 +17,5 @@ Sample for using karma-browserstack-launcher to run Karma tests (QUnit framework
 ###Sample test
  - To run: `karma start`
 
-[here]:https://github.com/karma-runner/karma-browserstack-launcher
+[here]:https://github.com/browserstack/karma-browserstack-launcher
 [dashboard]:https://www.browserstack.com/automate
