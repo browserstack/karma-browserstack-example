@@ -5,7 +5,7 @@ Sample for using karma-browserstack-launcher to run Karma tests (QUnit framework
 One test is failing on purpose as a demo of BrowserStack catching bugs in different browsers.
 
 ###Clone this repository
-- `git clone https://github.com/nidhimj22/karma-browserstack-example.git`
+- `git clone https://github.com/browserstack/karma-browserstack-example.git`
 
 ###Install karma-browserstack-launcher
 - `npm -g install karma-browserstack-launcher`
