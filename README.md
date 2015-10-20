@@ -16,7 +16,7 @@ One test is failing on purpose as a demo of BrowserStack catching bugs in differ
  - You can further customize configuration in karma.conf.js. For detailed reference, visit karma-browserstack-launcher github repository [here].
 
 ###Sample test
- - To run: `npm install` to install all dependencies
+ - Run `npm install` to install all dependencies
  - Run `node_modules/karma/bin/karma start` to start karma testing
 
 ###Note
