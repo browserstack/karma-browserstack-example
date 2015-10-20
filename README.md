@@ -17,7 +17,7 @@ One test is failing on purpose as a demo of BrowserStack catching bugs in differ
 
 ###Sample test
  - Run `npm install` to install all dependencies
- - Run `npm start` to start karma testing
+ - Run `npm test` to start karma testing
 
 ###Note
  - IE 6 and 7 Tests on Karma version 0.13 may fail(output - browser not captured).
