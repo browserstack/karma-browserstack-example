@@ -23,7 +23,6 @@
     "karma": "^0.13.11",
     "karma-browserstack-launcher": "^0.1.5",
     "karma-qunit": "^0.1.5",
-    "qunit": "^0.7.7",
     "qunitjs": "^1.19.0"
   }
 }

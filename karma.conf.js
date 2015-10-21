@@ -54,8 +54,8 @@ module.exports = function(config) {
     autoWatch: false,
     
     browserStack: {
-      username: 'jamesbond',
-      accessKey: '007'
+      username: process.env.BROWSERSTACK_USERNAME,
+      accessKey: process.env.BROWSERSTACK_KEY
     },
 
     // define browsers
