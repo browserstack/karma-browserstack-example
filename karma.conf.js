@@ -12,6 +12,9 @@ module.exports = function(config) {
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
     frameworks: ['qunit'],
 
+    //plugins
+    plugins: ['karma-qunit', 'karma-browserstack-launcher'],
+
 
     // list of files / patterns to load in the browser
     files: [
