@@ -1,42 +1,55 @@
- Karma-BrowserStack Example
-=========
+# Karma-BrowserStack Example
 
-Sample for using karma-browserstack-launcher to run Karma tests (QUnit framework) on BrowserStack infrastructure.
-One test is failing on purpose as a demo of BrowserStack catching bugs in different browsers.
+Sample for using karma-browserstack-launcher to run [Karma](https://karma-runner.github.io) tests ([QUnit framework](https://qunitjs.com/)) on BrowserStack infrastructure.
 
-### Prerequisites
-Node and npm
+_Note: One test is failing on purpose as a demo of BrowserStack catching bugs in different browsers._
 
-### Clone this repository
-`git clone https://github.com/browserstack/karma-browserstack-example.git`
+## Prerequisites
 
-### Install dependencies
+Make sure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
 
-Navigate to appropriate directory for testing and then install the dependencies by running
+## Clone the repository
 
-`npm install`
+Clone the repository in your development machine:
 
-### BrowserStack Configuration
+```sh
+git clone https://github.com/browserstack/karma-browserstack-example.git
+```
 
-Export the environment variables for the username and access key of your BrowserStack account.
-These can be found on the automate accounts page on [BrowserStack](https://www.browserstack.com/accounts/automate).
+## Install the dependencies
 
-`export BROWSERSTACK_USERNAME=<browserstack-username>`
+Navigate to the appropriate directory for testing and then install the dependencies:
 
-`export BROWSERSTACK_KEY=<browserstack-access-key>`
+```sh
+cd karma-browserstack-example
+npm install
+```
 
-You can further customize configuration in karma.conf.js. For detailed reference, visit karma-browserstack-launcher github repository [here](https://github.com/browserstack/karma-browserstack-launcher).
+## Add BrowserStack configurations
 
-#### Run the tests
+Export the environment variables for the Username and Access Key of your BrowserStack account.
+These can be found on the [Automate Accounts page on BrowserStack](https://www.browserstack.com/accounts/automate) or on the [Automate Dashboard](https://automate.browserstack.com/dashboard).
 
-Execute the following command to run the karma tests:
+```sh
+export BROWSERSTACK_USERNAME=<browserstack-username>
+export BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
+```
 
-`npm test`
+You can further customize configuration in _karma.conf.js_. For detailed reference, [visit karma-browserstack-launcher repository on GitHub](https://github.com/browserstack/karma-browserstack-launcher).
 
-###Note
-- IE 6 and 7 Tests on Karma version 0.13 may fail(output - browser not captured).
-- Use Karmav0.12 or below and add `transports: ['websocket','jsonp-polling']` to the karma.conf.js file
-- Checkout [karma issue] for more details.
+## Run the tests
+
+Execute the following command to run the Karma tests:
+
+```sh
+npm test
+```
+
+## Note
+
+* IE 6 and 7 Tests on Karma v0.13 may fail (output - browser not captured).
+* Use Karma v0.12 or below and add `transports: ['websocket','jsonp-polling']` to the _karma.conf.js_ file.
+* [Checkout this Karma issue for more details.](https://github.com/karma-runner/karma/issues/983)
 
 [dashboard]:https://www.browserstack.com/automate
 [karma issue]:https://github.com/karma-runner/karma/issues/983
