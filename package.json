@@ -1,7 +1,7 @@
 {
   "name": "karma-browserstack-example",
   "version": "1.0.0",
-  "description": "Sample To test Karma with BrowserStack",
+  "description": "Sample to test Karma with BrowserStack",
   "main": "karma.conf.js",
   "directories": {
     "test": "tests"
