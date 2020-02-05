@@ -55,7 +55,7 @@ module.exports = function(config) {
 
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: false,
-    
+
     browserStack: {
       username: process.env.BROWSERSTACK_USERNAME,
       accessKey: process.env.BROWSERSTACK_KEY
@@ -77,6 +77,11 @@ module.exports = function(config) {
         os_version: '6.0'
       }
     },
+
+    captureTimeout: 3e5,
+    browserDisconnectTolerance: 0,
+    browserDisconnectTimeout: 3e5,
+    browserSocketTimeout: 1.2e5,
 
     browsers: ['bs_firefox_mac', 'bs_iphone5'],
     // start these browsers
