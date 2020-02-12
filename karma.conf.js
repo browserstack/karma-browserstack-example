@@ -7,6 +7,8 @@ module.exports = function(config) {
     // base path that will be used to resolve all patterns (eg. files, exclude)
     basePath: '',
 
+    // hostname for local
+    hostname: 'bs-local.com',
 
     // frameworks to use
     // available frameworks: https://npmjs.org/browse/keyword/karma-adapter
