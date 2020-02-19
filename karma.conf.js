@@ -39,7 +39,7 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'BrowserStack'],
 
 
     // web server port
@@ -65,22 +65,24 @@ module.exports = function(config) {
 
     // define browsers
     customLaunchers: {
-      bs_firefox_mac: {
+      bs_chrome_windows: {
         base: 'BrowserStack',
-        browser: 'firefox',
-        browser_version: '21.0',
-        os: 'OS X',
-        os_version: 'Mountain Lion'
+        browser: 'chrome',
+        browser_version: '72.0',
+        os: 'Windows',
+        os_version: '10'
       },
-      bs_iphone5: {
+
+      bs_iphoneX: {
         base: 'BrowserStack',
-        device: 'iPhone 5',
+        device: 'iPhone X',
         os: 'ios',
-        os_version: '6.0'
+        real_mobile: true,
+        os_version: '11.0'
       }
     },
 
-    browsers: ['bs_firefox_mac', 'bs_iphone5'],
+    browsers: ['bs_chrome_windows', 'bs_iphoneX'],
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
 
