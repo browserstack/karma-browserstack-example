@@ -40,7 +40,8 @@ module.exports = function(config) {
     reporters: ['progress', 'BrowserStack'],
 
 
-    // web server port
+    // web server host and port
+    hostname: 'bs-local.com',
     port: 9876,
 
 
