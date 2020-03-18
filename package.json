@@ -20,8 +20,8 @@
   },
   "homepage": "https://github.com/browserstack/karma-browserstack-example#readme",
   "dependencies": {
-    "karma": "^0.13.11",
-    "karma-browserstack-launcher": "^0.1.5",
+    "karma": "^4.4.1",
+    "karma-browserstack-launcher": "^1.5.1",
     "karma-qunit": "^0.1.5",
     "qunitjs": "^1.19.0"
   }
