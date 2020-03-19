@@ -43,7 +43,6 @@ module.exports = function(config) {
 
 
     // web server host and port
-    hostname: 'bs-local.com',
     port: 9876,
 
 
