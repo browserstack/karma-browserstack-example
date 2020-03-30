@@ -39,10 +39,10 @@ module.exports = function(config) {
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    reporters: ['progress'],
+    reporters: ['progress', 'BrowserStack'],
 
 
-    // web server port
+    // web server host and port
     port: 9876,
 
 
@@ -57,10 +57,11 @@ module.exports = function(config) {
 
     // enable / disable watching file and executing tests whenever any file changes
     autoWatch: false,
-    
+
     browserStack: {
       username: process.env.BROWSERSTACK_USERNAME,
-      accessKey: process.env.BROWSERSTACK_KEY
+      accessKey: process.env.BROWSERSTACK_KEY,
+      apiClientEndpoint: 'https://api.browserstack.com'
     },
 
     // define browsers
@@ -68,19 +69,26 @@ module.exports = function(config) {
       bs_firefox_mac: {
         base: 'BrowserStack',
         browser: 'firefox',
-        browser_version: '21.0',
+        browser_version: '70.0',
         os: 'OS X',
-        os_version: 'Mountain Lion'
+        os_version: 'High Sierra'
       },
-      bs_iphone5: {
+      bs_iphoneX: {
         base: 'BrowserStack',
-        device: 'iPhone 5',
+        device: 'iPhone X',
         os: 'ios',
-        os_version: '6.0'
+        real_mobile: true,
+        os_version: '11.0'
       }
     },
 
-    browsers: ['bs_firefox_mac', 'bs_iphone5'],
+    captureTimeout: 3e5,
+    browserDisconnectTolerance: 0,
+    browserDisconnectTimeout: 3e5,
+    browserSocketTimeout: 1.2e5,
+    browserNoActivityTimeout: 3e5,
+
+    browsers: ['bs_firefox_mac', 'bs_iphoneX'],
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
 
