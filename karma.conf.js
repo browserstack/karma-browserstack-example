@@ -60,7 +60,7 @@ module.exports = function(config) {
 
     browserStack: {
       username: process.env.BROWSERSTACK_USERNAME,
-      accessKey: process.env.BROWSERSTACK_KEY,
+      accessKey: process.env.BROWSERSTACK_ACCESS_KEY,
       apiClientEndpoint: 'https://api.browserstack.com'
     },
 
